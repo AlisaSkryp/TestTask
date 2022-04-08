@@ -1,0 +1,201 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/css/style.css">
+<title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper  ">
+        <header class="container-fluid">
+            <div class=" header-menu row ">
+                <div class="logo col">
+                    <img class="img-fluid" src="img/logo.png">
+                </div>
+                <div class="icons col-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="173px" height="38px">
+           <image  x="140px" y="0px" width="33px" height="38px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAmCAMAAAB9PwLlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABBVBMVEVeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWz////P9L2iAAAAVXRSTlMAHCUiAhRlrtr95bt9LQaQ9bZBTd+iDYb74fPjNG4aEipZmumekglpdUrOYl6Mv3AXYYiVPLKDR/FWvVJyD6qm7MZ5qMlF9+fv0teWMR/5C2u4gDnLdyDaiAAAAAFiS0dEVgoN6YkAAAAHdElNRQfmBAYXGCkF4h7jAAABoklEQVQ4y32UeVvCMAzGAxvXUI4JCMiNjEME5BYFFAXlUlHz/b+K7ToYZav5Y2ve/p4sTdIBcOZwOiUZROZye7w+RFT8Z+d2+4FgCE0LqxbgIoK8RWM8cGnocSWRNJZXqWMgykKnUxkZsrl8oaj7R1+6pn5JMgWtnKDSIUqFOMXqSeIlIiaNXHJkXctacr8hsp8ta4heuyrVCaJHVskiY1vCW8QIfTcQm4IqK/p5WiRLUR/uSOH0Z1tEyCFUADqIXWEze4gShDHuEhJ9xAFJdKgJiTTiPYwOlbMnHv4nHg1iLCQqjBjK7slkUuH3HFOixfKMeIJn2mo+3xmVcuqeeKGukyM8ujTgCG7oaMP3hBcRpiczRyxhEpXXDi0u4vwY0IYmQa1hiTFemJlSG1liyG9EedeqtOoHgu/wEnElwZqLseHPsugDpIjsMvPYcsSmBdD9QJwxd0UA3+m4f5LhwIbhzJtfTXYUR9sTLZN3QA3Sm7mz9HKrX+tde8cu7re126Wj38NwLVkBdsXpT2IZrWfBzlL6fu1HPNug9pa/BX5S/gAf/Hl3Fy/FJgAAAABJRU5ErkJggg==" />
+           <image  x="73px" y="3px" width="40px" height="32px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAMAAABXc8oyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEVeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWz///+sWrn7AAAAPnRSTlMAAlKMnqQtRV5W4ekiKm6794bG+5qIDwHx+aIG5/MN5S+cgKgxqgkSkjka45YXFJVlPGknH98LJYGQpmvVSh5OlnsAAAABYktHRD8+YzB1AAAAB3RJTUUH5gQGFxgqnOtPWQAAAS9JREFUOMuF1G1bgjAUBuCjISpKmmKlZCZFUJhWWvb6/P+fJQPG5tjw+bZzbq6NjUGUptE8s6pp2axH7Q7xdB3o0uuzpgs0C3euZRhkTXcILu06Zw+zQSYvTrtcjoCx5SmZHDvgkq56wDVpY09LN/OpcQPMb084i+3hwgDvhFuSApcDs5NhANxz9zAunUcKDFg1NDkBg7weGhyHjx7vhHrHYSQOJX7SuXLq50RzkCuqQnpJap301uukzsn7qMgNq72+aSCtHdW9QwtlmZ1bB+hroZCzwmGrhxQ5wu1QAyn64C6/TQKqH260KBxtGXR5nV2F+ae8YfsvkuC+rI+Md8ZP3dwvh+l1nXrxRiQuBt8/KWyJ51zUZSfN8FvjukdrMfykgL+2sur0t7eqZvIvmwOjxJHyyvzoPQAAAABJRU5ErkJggg==" />
+           <image  x="0px" y="5px" width="42px" height="28px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAcCAMAAAAgPt3ZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEVeYWz///9eYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWxeYWz///8T1yYNAAAASHRSTlMAAAKAkoGaawFeSjT97Bwx+1lNCU+uztKMpqLGnMmOL/lyni1HkHUP90UGiB8qGuNcUhT1qnm74ZVB17InpJYS78K/y6gNPCITyvw2AAAAAWJLR0QB/wIt3gAAAAd0SU1FB+YEBhcYKpzrT1kAAAE7SURBVDjLjdPbVsIwEAXQE0SogngDgXpFQCqIKKUqqHjX+f8vcqZpS1uq4Tw0OSv7YZK1itxaft2cQtEC1Aatkk0wVaWyEW5V4FO1vWOiJYYWdlewe8B+1QLVjJYlDupAnRoGKzdqkg0cksGKzBMdAcfcTtienv0tW7yea/qPDWVEfdvOsJ1QLih1M+1CxmimFXlBS5TsHlsnLi+B/oAyKF2ppGWJXjmDOm2WCkMnLoHr0RJ1hgxvFCIr8rYPjEcp6oqcUIHPh24oPbrj7/g+QX1p8+YhsFNfEtUiG9BIatueVQNJ9BhaTd0nls/B+HPoeEEX+/Lq0zctm9EbzRNS2xLJNVxKSm29WBc7pXceoJOSMm8r0cUWJxZyS5LoI9XF5iz5Yz/JlK4/v6rMjJLf90vod3NgTMP+AX4BqhnkLWfCdkcAAAAASUVORK5CYII=" />
+           </svg>
+                </div>
+            </div>
+        </header>
+        </header>
+        <nav class="navbar-nav navbar navbar-expand-sm  navbar-expand-lg">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="navbar-menu" href="#">Home</li>
+                    <li class="navbar-menu" href="#">Recognize</li>
+                    <li class="navbar-menu" href="#">Network</li>
+                    <li class="navbar-menu" href="#">Leaderboard</li>
+                    <li class="navbar-menu" href="#">Programs</li>
+                    <li class="navbar-menu" href="#">Activity</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <aside>
+
+                <div class="block block-1 d-flex mb-4 ">
+                    <img class="image-fluid" src="img/pic.png">
+                    <div class="name">
+                        <p class="name-b">Anna Parker</p>
+                        <p>Senior Director, Total Rewards</p>
+                    </div>
+                </div>
+                <div class="block block-2 d-flex mb-4">
+                    <div class="shop">
+                        <p>Go shopping</p>
+                    </div>
+                    <div class="numbers">
+
+                        <span>1,124</span>
+                        <p>Shopping Points</p>
+                    </div>
+
+                </div>
+                <div class=" block block-3 d-flex mb-4 ">
+                    <div class="shop">
+                        <p>My Budget</p>
+                    </div>
+                    <div class="numbers">
+
+                        <span>1,932</span>
+                        <p>Points to give</p>
+                    </div>
+
+                </div>
+                <div class="block block-4 d-flex mb-4">
+                    <p class="name-b">My Badges</p>
+                    <img src="img/badge-icon.png">
+
+                </div>
+                <div class="block block-5 d-flex mb-4">
+                    <p class="name-b">My Awards</p>
+                    <img src="img/trophy-icon.png">
+
+
+
+                </div>
+                <div class="block block-6  d-flex mb-4">
+                    <p class="name-b">Quizzes</p>
+                    <img src="img/lightbulb-icon.png">
+                </div>
+                <div class="block block-7 mb-4">
+                    <p class="name-b">Redeen On-The-Spot-Award</p>
+                    <div class="form">
+                    </div>
+                </div>
+            </aside>
+            <section class="container-fluid">
+                <div class="recognition row">
+                    <h3>Recognize</h3>
+                    <p>I would like to recognize the following group:</p>
+                    <div class="group">
+                        <div class="namelist">
+                            <p>Dorian Greene</p>
+                            <span>x</span>
+                        </div>
+                        <div class="namelist">
+                            <p>Gus Levy</p>
+                            <span>x</span>
+                        </div>
+                        <div class="namelist">
+                            <p>Jeremy Stevens</p>
+                            <span>x</span>
+                        </div>
+                        <div class="namelist">
+                            <p>Brenda Owen</p>
+                            <span>x</span>
+                        </div>
+                        <div class="namelist ">
+                            <p>Michael LaRoche</p>
+                            <span>x</span>
+                        </div>
+                        <div class="namelist ">
+                            <p>Jeanette Linkoln</p>
+                            <span>x</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-user">
+                    <div class="text-part">
+                        <span class="orange">Add User</span>
+                        <p>I'd like to recognize<span> group of colleagues </span>for the<span> Peer-To-Peer </span>Program</p>
+                    </div>
+                    <div class="dpd ">
+                        <div class="sel-1 ">
+                            <label for="select">Criteria:</label>
+                            <select name="selection" id="some-select">
+                                <option value="">Technical Exelence</option>
+                                <option value="option">Option</option>
+                                <option value="option">Option</option>
+                                <option value="option">Option</option>
+                            </select>
+                        </div>
+                        <div class="sel-2">
+                            <label for="select">Points:</label>
+                            <select name="selection" id="some-select">
+                                <option value="">50</option>
+                                <option value="option">Option</option>
+                                <option value="option">Option</option>
+                                <option value="option">Option</option>   
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal">
+                    <h3>Personal message:
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                </div>
+                <div class="down">
+                    <div class="ecard">
+                        <h3>E-card preview:</h3>
+                        <div class="image-block">
+                            <img src="img/card.png" class="img-fluid">
+                            <div class=" ecard-text ">
+                                <span>Criteria: Technical Exelence</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                </p>
+                                <span>Anna Parker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-part container-fluid ">
+                        <div class="row align-items-start ">
+                            <div class="img1 col-4 ">
+                                <img src="img/thumbnail1.png " class="img-thumbnail float-start" alt=" ">
+                            </div>
+                            <div class="img2 col-4 ">
+                                <img src="img/thumbnail2.png " class="img-thumbnail" alt=" ">
+                            </div>
+                            <div class="img3 col-4 ">
+                                <img src="img/thumbnail3.png " class="img-thumbnail" alt=" ">
+                            </div>
+                            <div class="img4 col-4 ">
+                                <img src="img/thumbnail4.png " class="img-thumbnail" alt=" ">
+                            </div>
+                            <div class="img5 col-4 ">
+                                <img src="img/thumbnail5.png " class="img-thumbnail" alt=" ">
+                            </div>
+                            <div class="img6 col-4 ">
+                                <img src="img/thumbnail6.png " class="img-thumbnail" alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-part container d-flex">
+                    <div class="send-to">
+                        <button class="send">Send Copy to:</button>
+                        <input class="form-control-lg " type="text" id="fname" name="fname" value="">
+                    </div>
+                    <button>Rewiew Awards</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+@import "images/images";
+@import "space/spaces";
+@import "colors/colors";
+@import "config";
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Roboto:wght@100;300;400&display=swap');
+* {
+    padding: unset;
+}
+
+.wrapper {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: $background;
+}
+
+.text-part {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    span {
+        color: $orange;
+    }
+    p {
+        color: $main-text;
+        margin-top: 2rem;
+    }
+}
+
+input[type=text] {
+    border: 1px solid $light-blue;
+    opacity: 70%;
+}
+
+.text-part .orange {
+    margin-bottom: 2rem;
+}
+
+.personal {
+    margin-top: 3rem;
+}
+
+.personal h3 {
+    text-transform: uppercase;
+}
+
+.recognition,
+.personal {
+    color: $main-text;
+}
+
+.recognition h3,
+.personal h3 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.icons {
+    margin-top: 4rem;
+}
+
+.block-1 {
+    background-color: $light-blue;
+    color: $white-font;
+}
+
+.block-1 {
+    .name-b {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    .name {
+        padding-left: 1rem;
+    }
+}
+
+.block {
+    padding: 1.5rem;
+    white-space: nowrap;
+    color: $white-font;
+    justify-content: space-between;
+}
+
+.block-2 {
+    background-image: url("../../img/bg-1.png");
+}
+
+.block-3 {
+    background-image: url("../../img/budget.png");
+}
+
+.block-4 {
+    background-image: url("../../img/badges.png");
+}
+
+.block-5 {
+    background-image: url("../../img/awards.png");
+}
+
+.block-6 {
+    background-image: url("../../img/quizes.png");
+}
+
+.block-7 {
+    background-image: url("../../img/redeem.png");
+}
+
+.wrapper {
+    background-image: $background;
+    background-size: cover;
+}
+
+.block-2 {
+    background-image: $block-background;
+}
+
+.ecard {
+    margin-top: 3rem;
+}
+
+.ecard h3 {
+    text-transform: uppercase;
+    color: $main-text;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    padding: $navbar-padding-x;
+    font-family: $font-family-oxygen;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $main-text;
+}
+
+.navbar-menu:first-child {
+    padding-left: unset!important;
+}
+
+aside {
+    float: left;
+    text-overflow: ellipsis;
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+}
+
+.group {
+    display: flex;
+    border: 1px solid #e2e1df;
+    background-color: $white-font;
+    ;
+    opacity: 80%;
+}
+
+.recognition p {
+    font-size: 1rem;
+}
+
+.namelist {
+    display: flex;
+    box-sizing: content-box;
+    background-color: $grey_buttons;
+    color: $white-font;
+    padding: 0.06rem;
+    margin: 0.2rem;
+    align-items: center;
+}
+
+.namelist p,
+.namelist span {
+    font-size: $small-font;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    margin-bottom: unset!important;
+}
+
+section {
+    margin-left: 3.37rem;
+}
+
+aside,
+section {
+    display: inline-block;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+.dpd {
+    display: flex;
+    flex-direction: column;
+}
+
+.sel-1 {
+    margin-bottom: 1rem;
+}
+
+select {
+    margin-left: 4.37rem;
+}
+
+.personal p {
+    background-color: $grey-background;
+    color: $white-font;
+    padding: 2.37rem;
+}
+
+.image-block {
+    display: flex;
+}
+
+.image-part {
+    margin-top: 5.5rem;
+}
+
+.ecard-text {
+    background-color: $light-blue;
+    padding: 1.5rem;
+}
+
+.ecard-text {
+    p {
+        color: $white-font;
+    }
+    span {
+        color: $font-color;
+        font-weight: bold;
+    }
+}
+
+.down {
+    display: flex;
+}
+
+.numbers span {
+    font-size: 2.25rem;
+}
+
+.numbers {
+    text-align: right;
+}
+
+.block-7 {
+    .form {
+        height: 2.5rem;
+        border: 2px solid white;
+        background-color: rgba(243, 243, 243, 0.5);
+    }
+}
+
+.img1,
+.img2,
+.img3 {
+    margin-bottom: 1.25rem;
+}
+
+.form-part {
+    justify-content: space-between;
+}
+
+.form-part button {
+    color: $white-font;
+    background-color: $light-blue;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.send-to {
+    display: flex;
+}
+
+.form-part {
+    margin-top: 2rem;
+}
+
+.send {
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .image-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .down {
+        display: flex;
+        flex-direction: column;
+    }
+    .group {
+        flex-wrap: wrap;
+    }
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .icons {
+        margin-top: 1rem;
+    }
+    select {
+        margin-left: unset;
+    }
+    .form-part {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-part button {
+        margin-top: 1rem;
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .send-to {
+        display: flex;
+        flex-direction: column;
+        word-wrap: wrap;
+    }
+    input[type=text] {
+        margin-top: 1rem;
+    }
+    .send {
+        margin-right: unset;
+    }
+    .block-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .block-1 .name {
+        padding-left: unset;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1201px) {
+    .down {
+        display: flex;
+        flex-direction: column;
+    }
+}
