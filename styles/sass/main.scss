@@ -1,16 +1,28 @@
 @import "images/images";
-@import "space/spaces";
 @import "colors/colors";
 @import "config";
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Roboto:wght@100;300;400&display=swap');
 * {
-    padding: unset;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     background: $background;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+}
+
+ul::first-child {
+    text-align: left;
 }
 
 .text-part {
@@ -54,7 +66,13 @@ input[type=text] {
 }
 
 .icons {
-    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+}
+
+.icons img {
+    margin-right: 2rem;
+    height: 1.6rem;
 }
 
 .block-1 {
@@ -103,27 +121,23 @@ input[type=text] {
     background-image: url("../../img/redeem.png");
 }
 
-.wrapper {
-    background-image: $background;
-    background-size: cover;
-}
-
 .block-2 {
     background-image: $block-background;
 }
 
 .ecard {
-    margin-top: 3rem;
+    display: flex;
 }
 
-.ecard h3 {
-    text-transform: uppercase;
-    color: $main-text;
+.ecard {
+    h3 {
+        text-transform: uppercase;
+        color: $main-text;
+    }
 }
 
 .navbar-nav {
     display: flex;
-    justify-content: space-between;
 }
 
 .navbar-menu {
@@ -132,6 +146,7 @@ input[type=text] {
     text-transform: uppercase;
     font-size: 2rem;
     color: $main-text;
+    text-align: left;
 }
 
 .navbar-menu:first-child {
@@ -141,23 +156,48 @@ input[type=text] {
 aside {
     float: left;
     text-overflow: ellipsis;
-    padding: 10px;
 }
 
 .main {
     display: flex;
+    margin-top: 8.6rem;
+}
+
+.nav {
+    justify-content: space-between;
+    font-family: $font-family-oxygen;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $main-text;
+    text-align: left;
+    padding-top: 5.75rem;
+}
+
+.nav {
+    a {
+        color: $main-text;
+        padding-left: 0;
+    }
 }
 
 .group {
     display: flex;
-    border: 1px solid #e2e1df;
+    border: 1px solid $group-border;
     background-color: $white-font;
-    ;
+    flex-wrap: wrap;
     opacity: 80%;
+    margin-left: 0.75rem;
 }
 
-.recognition p {
-    font-size: 1rem;
+h3,
+p {
+    padding: 0;
+}
+
+.recognition {
+    p {
+        font-size: 1rem;
+    }
 }
 
 .namelist {
@@ -170,15 +210,26 @@ aside {
     align-items: center;
 }
 
-.namelist p,
-.namelist span {
-    font-size: $small-font;
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-    margin-bottom: unset!important;
+.namelist {
+    p {
+        font-size: $small-font;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        margin-bottom: unset!important;
+    }
+    span {
+        font-size: $small-font;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        margin-bottom: unset!important;
+    }
 }
 
-section {
+.logo {
+    padding: 0;
+}
+
+.main-block {
     margin-left: 3.37rem;
 }
 
@@ -202,18 +253,20 @@ select {
     margin-left: 4.37rem;
 }
 
-.personal p {
-    background-color: $grey-background;
-    color: $white-font;
-    padding: 2.37rem;
+#some-select {
+    margin-left: 4.7rem;
+}
+
+.personal {
+    p {
+        background-color: $grey-background;
+        color: $white-font;
+        padding: 2.37rem;
+    }
 }
 
 .image-block {
     display: flex;
-}
-
-.image-part {
-    margin-top: 5.5rem;
 }
 
 .ecard-text {
@@ -233,6 +286,7 @@ select {
 
 .down {
     display: flex;
+    margin-top: 3rem;
 }
 
 .numbers span {
@@ -257,17 +311,41 @@ select {
     margin-bottom: 1.25rem;
 }
 
+.img1,
+.img2,
+.img3,
+.img4,
+.img3,
+.img5,
+.img6 {
+    padding: 0px 10px 10px 10px;
+}
+
+.image-part {
+    display: flex;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+}
+
 .form-part {
     justify-content: space-between;
 }
 
-.form-part button {
-    color: $white-font;
-    background-color: $light-blue;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    border: none;
-    font-size: 1.5rem;
+.form-part {
+    button {
+        color: $white-font;
+        background-color: $light-blue;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        border: none;
+        font-size: 1.5rem;
+    }
 }
 
 .send-to {
@@ -282,7 +360,7 @@ select {
     margin-right: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width:300px) and (max-width: 600px) {
     .main {
         display: flex;
         flex-direction: column;
@@ -298,15 +376,18 @@ select {
         display: flex;
         flex-direction: column;
     }
+    .ecard {
+        display: flex;
+        flex-direction: column;
+    }
     .group {
         flex-wrap: wrap;
     }
     .header-menu {
         display: flex;
         flex-direction: column;
-    }
-    .icons {
-        margin-top: 1rem;
+        text-align: center;
+        width: 100%;
     }
     select {
         margin-left: unset;
@@ -315,10 +396,12 @@ select {
         display: flex;
         flex-direction: column;
     }
-    .form-part button {
-        margin-top: 1rem;
-        padding-left: unset;
-        padding-right: unset;
+    .form-part {
+        button {
+            margin-top: 1rem;
+            padding-left: unset;
+            padding-right: unset;
+        }
     }
     .send-to {
         display: flex;
@@ -338,11 +421,87 @@ select {
     .block-1 .name {
         padding-left: unset;
     }
+    .name {
+        word-wrap: wrap;
+    }
+    .img {
+        width: unset;
+        text-align: center;
+    }
+    .position {
+        white-space: normal;
+        text-align: center;
+    }
+    .wrapper {
+        padding: 0;
+        margin: 1rem;
+    }
+    .icons {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .icons img {
+        margin-right: 2rem;
+        height: 1.6rem;
+    }
+    .name-b {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 1201px) {
-    .down {
+    .image-block {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .ecard {
+        width: 100%;
+    }
+    .image-part {
+        width: 100%;
+        margin-top: 3rem;
+        align-items: center;
+    }
+    .img {
+        width: unset;
+    }
+    .navbar-menu {
+        font-size: 1.5rem;
+    }
+    .wrapper {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 2148px) {
+    .ecard {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .ecard-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    body {
+        width: 768px;
+    }
+    .main-block {
+        margin: 0;
     }
 }
