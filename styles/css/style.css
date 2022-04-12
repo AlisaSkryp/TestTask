@@ -379,4 +379,7 @@ select {
   body {
     width: 768px; }
   .main-block {
-    margin: 0; } }
+    margin: 0; }
+  .main {
+    display: flex;
+    flex-direction: column; } }
