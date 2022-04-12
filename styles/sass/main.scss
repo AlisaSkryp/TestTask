@@ -365,6 +365,9 @@ select {
         display: flex;
         flex-direction: column;
     }
+    .main-block{
+        margin:0;
+    }
     .navbar-nav {
         display: none;
     }
@@ -498,9 +501,7 @@ select {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    body {
-        width: 768px;
-    }
+   
     .main-block {
         margin: 0;
     }
