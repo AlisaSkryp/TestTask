@@ -280,6 +280,9 @@ select {
   .main {
     display: flex;
     flex-direction: column; }
+   .main-block {
+        margin: 0;
+    }
   .navbar-nav {
     display: none; }
   .image-block {
